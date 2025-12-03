@@ -1,0 +1,178 @@
+.kiosk-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar - Ruban à gauche */
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-header .logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-list {
+  flex: 1;
+  padding: 0.5rem 0;
+  overflow-y: auto;
+}
+
+/* Scrollbar pour la sidebar */
+.project-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.project-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Items de projet dans le ruban */
+.project-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.project-item:hover {
+  background-color: var(--sidebar-hover);
+  color: var(--text-primary);
+}
+
+.project-item.active {
+  background-color: var(--sidebar-active);
+  border-left-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.project-item.active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent-color), transparent);
+}
+
+.project-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  opacity: 0.6;
+  min-width: 1.2rem;
+}
+
+.project-item.active .project-number {
+  opacity: 1;
+}
+
+.project-name {
+  flex: 1;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Zone principale d'affichage */
+.main-content {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
+}
+
+/* Scrollbar pour le contenu principal */
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.project-display {
+  padding: 2rem 3rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Optimisation pour écran tactile */
+@media (hover: none) and (pointer: coarse) {
+  .project-item {
+    padding: 1.5rem 1.5rem;
+    min-height: 70px;
+  }
+
+  .project-item:active {
+    background-color: var(--sidebar-active);
+  }
+}
+
+/* Responsive - petits écrans */
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+
+  .sidebar-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-display {
+    padding: 2rem;
+  }
+
+  .project-display h1 {
+    font-size: 2.5rem;
+  }
+}

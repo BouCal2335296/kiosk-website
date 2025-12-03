@@ -1,0 +1,62 @@
+.tech-banner-container {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(100, 108, 255, 0.1) 0%, rgba(129, 140, 248, 0.1) 100%);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.tech-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tech-scroll {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.tech-scroll:hover {
+  animation-play-state: paused;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  padding: 0.75rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  border: 1px solid rgba(100, 108, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: rgba(100, 108, 255, 0.2);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.tech-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--accent-color), #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
