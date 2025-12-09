@@ -328,6 +328,167 @@ function App() {
       additionalInfo:
         "Ce projet révolutionne l'approche de la sécurité en rendant le pentesting accessible à tous. L'installation de Kali Linux via WSL sur Windows offre un environnement de test complet. Claude Code se connecte en SSH à cette machine et utilise son intelligence pour orchestrer les tests de pénétration : scan de ports, détection de vulnérabilités, tests d'injection, etc. Le plus impressionnant ? Tout est automatisé et documenté dans un rapport Word généré par Pandoc, avec un script personnalisé. Plus besoin d'être un expert en cybersécurité pour sécuriser ses systèmes !",
     },
+    {
+      id: 11,
+      title: "Project Launcher",
+      subtitle: "Gestionnaire de projets GitHub avec interface WPF",
+      description:
+        "Une application de bureau WPF qui révolutionne la gestion de projets GitHub. Imaginez pouvoir cloner tous les projets de votre organisation, gérer les branches, créer des commits, et ouvrir vos projets dans votre IDE favori, le tout depuis une seule interface élégante. Plus besoin de jongler entre plusieurs terminaux et fenêtres GitHub : tout est centralisé et simplifié !",
+      technologies: [
+        "WPF (.NET)",
+        "C#",
+        "Octokit",
+        "GitHub API",
+        "Git",
+        "XAML",
+        "Visual Studio",
+      ],
+      videoUrl: null,
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🖥️",
+          title: "Interface WPF moderne",
+          description:
+            "Application de bureau avec une interface graphique intuitive développée en WPF. Onglets Available/Installed pour organiser vos projets, notifications en temps réel, et contrôles Git intégrés.",
+        },
+        {
+          icon: "🔌",
+          title: "Intégration GitHub via Octokit",
+          description:
+            "Communication directe avec l'API GitHub grâce à Octokit. Récupération automatique de tous les repos publics et privés d'une organisation, sans construire manuellement les requêtes HTTP.",
+        },
+        {
+          icon: "⚙️",
+          title: "Gestion Git complète",
+          description:
+            "Clonage, pull, checkout de branches, détection des fichiers modifiés, création de commits avec titre et description, push automatique. Détecte même les merges en cours pour éviter les conflits !",
+        },
+        {
+          icon: "🚀",
+          title: "Lancement IDE intelligent",
+          description:
+            "Ouvrez vos projets directement dans Visual Studio Code ou Visual Studio depuis l'application. Installation automatique des dépendances avant le lancement pour un workflow fluide.",
+        },
+      ],
+      benefits: [
+        "Centralisation : tous vos projets GitHub accessibles depuis une seule fenêtre",
+        "Gain de temps massif : clonage et configuration automatisés",
+        "Interface visuelle : plus besoin de mémoriser les commandes Git en terminal",
+        "Gestion sécurisée : authentification par token GitHub dans appsettings.json",
+        "Workflow optimisé : installation des dépendances et ouverture IDE en un clic",
+        "Notifications claires : chaque action et problème est affiché à l'utilisateur",
+      ],
+      additionalInfo:
+        "Ce projet simplifie radicalement le workflow de développement en équipe. L'architecture repose sur deux services principaux : ServiceGitHub (communication avec l'API via Octokit) et ServiceGit (exécution de commandes Git locales via Process C#). L'interface WPF offre trois composants clés : MainWindow (gestion des projets et détails), CommitDialog (création de commits avec liste des fichiers modifiés), et IDESelectionDialog (choix de l'IDE et installation des dépendances). Octokit élimine la complexité des appels HTTP manuels : au lieu de configurer HttpClient, construire les URLs, gérer la désérialisation JSON et la pagination, tout se fait en une ligne de code. Le résultat ? Une application professionnelle qui transforme la gestion de multiples projets GitHub en une expérience fluide et intuitive.",
+    },
+    {
+      id: 12,
+      title: "Chart.js Data",
+      subtitle: "Graphiques interactifs pour applications web",
+      description:
+        "Une solution de visualisation de données moderne et interactive pour le web. Imaginez transformer vos données brutes en magnifiques graphiques animés et responsives : barres, lignes, camemberts, radars... Chart.js rend la visualisation de données accessible et personnalisable à l'infini. Créez des dashboards professionnels qui s'adaptent automatiquement à tous les écrans, du mobile au desktop !",
+      technologies: [
+        "Chart.js",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "HTML5 Canvas",
+        "NPM",
+      ],
+      videoUrl: null,
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "📊",
+          title: "Bibliothèque modulaire et légère",
+          description:
+            "Chart.js est open-source, gratuite et utilise un système modulaire. Importez uniquement les composants nécessaires (CategoryScale, LinearScale, BarElement, etc.) pour garder votre application performante et légère.",
+        },
+        {
+          icon: "🎨",
+          title: "Personnalisation totale",
+          description:
+            "Contrôle complet sur tous les aspects visuels : couleurs, types de graphiques (Bar, Line, Pie, Doughnut, Radar), titres, légendes, tooltips. Créez l'identité visuelle parfaite pour vos données.",
+        },
+        {
+          icon: "📱",
+          title: "Responsive par défaut",
+          description:
+            "Les graphiques s'adaptent automatiquement à toutes les tailles d'écrans. Un seul code fonctionne parfaitement sur mobile, tablette et desktop sans configuration supplémentaire.",
+        },
+        {
+          icon: "⚡",
+          title: "Intégration React simplifiée",
+          description:
+            "Installation facile via NPM, imports modulaires propres, et intégration native dans les composants React/Next.js. Utilisez des composants comme <Bar />, <Line />, <Pie /> directement dans votre JSX.",
+        },
+      ],
+      benefits: [
+        "Simplicité d'intégration : npm install chart.js et c'est prêt",
+        "Performance optimale : ne charge que les modules utilisés",
+        "Documentation exhaustive : exemples et guides facilement accessibles",
+        "Compatibilité universelle : fonctionne avec tous les frameworks modernes",
+        "Interactivité native : tooltips, animations, et légendes intégrées",
+        "Écosystème actif : communauté large et mises à jour régulières",
+      ],
+      additionalInfo:
+        "Chart.js transforme la complexité de la visualisation de données en quelques lignes de code élégantes. L'architecture modulaire signifie que vous importez Chart as ChartJS (le moteur principal), puis uniquement les scales (CategoryScale pour les catégories, LinearScale pour les valeurs numériques), les éléments (BarElement, ArcElement), et les features (Title, Tooltip, Legend). Après l'enregistrement avec ChartJS.register(), vous créez vos graphiques en définissant un objet de configuration simple avec labels (catégories sur l'axe X), datasets (vos données avec leurs styles), et options. Le résultat ? Des visualisations professionnelles, animées, interactives et responsives qui rivalisent avec des solutions payantes complexes. Parfait pour créer des dashboards, rapports analytiques, ou présenter des statistiques de manière visuellement impactante.",
+    },
+    {
+      id: 13,
+      title: "Umami Analytics",
+      subtitle: "Solution d'analytics open-source et respectueuse de la vie privée",
+      description:
+        "Un système d'analytics moderne qui suit vos visiteurs sans compromettre leur vie privée. Imaginez Google Analytics, mais open-source, auto-hébergé, et sans collecter aucune donnée personnelle. Umami vous montre quelles pages sont les plus populaires, combien de visiteurs vous avez, et toutes les statistiques importantes en temps réel, tout en respectant la confidentialité de vos utilisateurs !",
+      technologies: [
+        "Umami",
+        "Docker",
+        "PostgreSQL",
+        "Next.js",
+        "JavaScript",
+        "API REST",
+        "React",
+      ],
+      videoUrl: null,
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🔒",
+          title: "Respect de la vie privée",
+          description:
+            "Aucune donnée personnelle collectée, 100% conforme au RGPD. Open-source et auto-hébergeable sur vos propres serveurs Docker. Vous contrôlez entièrement vos données analytics.",
+        },
+        {
+          icon: "🐳",
+          title: "Déploiement Docker simplifié",
+          description:
+            "Stack complète avec docker-compose : serveur Umami + PostgreSQL. Configuration via variables d'environnement (DATABASE_URL, APP_SECRET, TRACKER_SCRIPT_NAME). Démarrage en une commande : docker compose up -d.",
+        },
+        {
+          icon: "📡",
+          title: "Intégration Next.js transparente",
+          description:
+            "Script de tracking intégré via Next.js Script component. Endpoints API personnalisés (/api/popular, /api/stats) qui interrogent l'API Umami côté serveur avec authentification sécurisée par token Bearer.",
+        },
+        {
+          icon: "📊",
+          title: "Composants React réactifs",
+          description:
+            "Composants UI personnalisés (MostViewed) avec rafraîchissement automatique. Filtrage intelligent par préfixe ou URL exacte. Affichage temps réel des pages les plus consultées et statistiques sur 30 jours.",
+        },
+      ],
+      benefits: [
+        "Aucun tracking invasif : respect total de la vie privée des utilisateurs",
+        "Auto-hébergement : vos données restent chez vous, jamais chez un tiers",
+        "Léger et performant : ne ralentit pas votre site web",
+        "API flexible : créez vos propres dashboards et visualisations personnalisées",
+        "Gratuit et open-source : aucun coût de licence ou frais mensuels",
+        "Sécurité renforcée : token d'API protégé côté serveur uniquement",
+      ],
+      additionalInfo:
+        "Ce projet offre une alternative éthique et professionnelle à Google Analytics. L'architecture repose sur un serveur Umami dockerisé connecté à PostgreSQL, exposé sur le port 3003. Le site Next.js intègre le script de tracking personnalisé (ex: cinewiki.js) qui envoie automatiquement les page views. Deux endpoints API Next.js (/api/popular et /api/stats) interrogent l'API Umami côté serveur avec un token Bearer sécurisé, jamais exposé au client. L'endpoint /api/popular supporte le filtrage par préfixe (ex: /article pour trouver l'article le plus vu) ou URL exacte, avec une limite configurable. Le composant React MostViewed affiche dynamiquement la page la plus consultée avec rafraîchissement automatique toutes les 60 secondes. Configuration via .env avec NEXT_PUBLIC_UMAMI_URL, NEXT_PUBLIC_UMAMI_SCRIPT, NEXT_PUBLIC_UMAMI_WEBSITE_ID (public) et UMAMI_TOKEN (privé serveur uniquement). Bonnes pratiques : jamais exposer le token, éviter les refresh trop fréquents, utiliser des noms de sites clairs, sécuriser l'accès admin Umami. Cas d'usage avancés : page Statistiques pour admins, tracking d'événements custom (clics boutons), comparaisons temporelles mois par mois.",
+    },
   ];
 
   return (
