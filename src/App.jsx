@@ -489,6 +489,60 @@ function App() {
       additionalInfo:
         "Ce projet offre une alternative éthique et professionnelle à Google Analytics. L'architecture repose sur un serveur Umami dockerisé connecté à PostgreSQL, exposé sur le port 3003. Le site Next.js intègre le script de tracking personnalisé (ex: cinewiki.js) qui envoie automatiquement les page views. Deux endpoints API Next.js (/api/popular et /api/stats) interrogent l'API Umami côté serveur avec un token Bearer sécurisé, jamais exposé au client. L'endpoint /api/popular supporte le filtrage par préfixe (ex: /article pour trouver l'article le plus vu) ou URL exacte, avec une limite configurable. Le composant React MostViewed affiche dynamiquement la page la plus consultée avec rafraîchissement automatique toutes les 60 secondes. Configuration via .env avec NEXT_PUBLIC_UMAMI_URL, NEXT_PUBLIC_UMAMI_SCRIPT, NEXT_PUBLIC_UMAMI_WEBSITE_ID (public) et UMAMI_TOKEN (privé serveur uniquement). Bonnes pratiques : jamais exposer le token, éviter les refresh trop fréquents, utiliser des noms de sites clairs, sécuriser l'accès admin Umami. Cas d'usage avancés : page Statistiques pour admins, tracking d'événements custom (clics boutons), comparaisons temporelles mois par mois.",
     },
+    {
+      id: 14,
+      title: "Grafana",
+      subtitle: "Plateforme de visualisation et monitoring de données en temps réel",
+      description:
+        "Une plateforme open-source puissante pour créer des dashboards interactifs et surveiller vos systèmes en temps réel. Imaginez transformer n'importe quelle source de données (PostgreSQL, Prometheus, InfluxDB, MySQL, etc.) en magnifiques tableaux de bord avec graphiques, métriques et alertes. Grafana est l'outil de référence pour le monitoring d'infrastructures, l'analyse de données et la création de dashboards professionnels !",
+      technologies: [
+        "Grafana",
+        "Docker",
+        "PostgreSQL",
+        "Prometheus",
+        "InfluxDB",
+        "Time Series DB",
+        "API REST",
+      ],
+      videoUrl: null,
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🔌",
+          title: "Sources de données multiples",
+          description:
+            "Connectez Grafana à pratiquement n'importe quelle base de données : PostgreSQL, MySQL, Prometheus, InfluxDB, Elasticsearch, et plus de 100+ data sources supportées. Une interface unifiée pour toutes vos données.",
+        },
+        {
+          icon: "📊",
+          title: "Dashboards riches et personnalisables",
+          description:
+            "Créez des tableaux de bord interactifs avec une variété de panels : graphiques en lignes, barres, gauges, heatmaps, tableaux, stat panels. Drag-and-drop intuitif, variables dynamiques, et thèmes personnalisables (dark/light).",
+        },
+        {
+          icon: "⚡",
+          title: "Monitoring temps réel et alertes",
+          description:
+            "Surveillez vos systèmes en temps réel avec des rafraîchissements automatiques. Configurez des alertes intelligentes qui vous notifient par email, Slack, ou webhook lorsque des seuils sont dépassés.",
+        },
+        {
+          icon: "🐳",
+          title: "Déploiement flexible",
+          description:
+            "Installation simple via Docker, déploiement on-premise ou cloud. Configuration centralisée, gestion des utilisateurs et permissions, organisation en dossiers, partage de dashboards public ou privé.",
+        },
+      ],
+      benefits: [
+        "Open-source et gratuit : pas de coûts de licence pour des fonctionnalités puissantes",
+        "Visualisation professionnelle : dashboards au niveau des outils enterprise",
+        "Communauté massive : plugins, templates et support communautaire actif",
+        "Scalabilité : du petit projet au monitoring d'infrastructures complexes",
+        "Intégration facile : API complète pour automatiser la création de dashboards",
+        "Performance optimale : requêtes optimisées et cache intelligent",
+      ],
+      additionalInfo:
+        "Grafana est devenu l'outil standard de l'industrie pour la visualisation de données et le monitoring. Son architecture flexible permet de connecter plusieurs data sources simultanément, créer des dashboards complexes avec des variables dynamiques, et partager les visualisations avec votre équipe. Les panels supportent une grande variété de types de graphiques : time series (lignes et aires), bar charts, pie charts, gauges, stat panels pour les KPIs, tables pour les données détaillées, et heatmaps pour les matrices de données. Le système d'alerting intégré surveille vos métriques en continu et peut déclencher des notifications via multiples canaux (email, Slack, Discord, webhook custom, PagerDuty). Grafana supporte le templating avec des variables qui rendent vos dashboards réutilisables : créez un dashboard pour un serveur et réutilisez-le pour tous vos serveurs avec des filtres dynamiques. Le déploiement Docker simplifie l'installation : docker run avec quelques variables d'environnement et vous êtes prêt. Configuration via fichiers YAML ou interface web, gestion des utilisateurs avec roles et permissions, organisation hiérarchique avec dossiers et tags. L'API REST complète permet d'automatiser la création de dashboards, gérer les data sources, et intégrer Grafana dans vos workflows CI/CD. Cas d'usage populaires : monitoring d'infrastructures (CPU, RAM, disque, réseau), métriques applicatives (temps de réponse, erreurs, utilisateurs actifs), analytics business (ventes, KPIs, conversion), et IoT (capteurs, données temps réel).",
+    },
   ];
 
   return (
