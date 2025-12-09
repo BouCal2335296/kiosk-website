@@ -61,7 +61,7 @@ function App() {
     },
     {
       id: 2,
-      title: "Dashboard Accelerator",
+      title: "Apache Airflow",
       subtitle: "Pré-génération automatique de graphiques",
       description:
         "Un système qui pré-génère automatiquement les graphiques pour éliminer les temps de chargement. Imaginez que vos graphiques soient déjà prêts avant même que l'utilisateur ne clique : au lieu d'attendre qu'Apache Superset crée les graphiques à chaque visite (ce qui peut prendre plusieurs secondes), Airflow les génère à l'avance chaque nuit. C'est comme préparer des plats à l'avance au lieu de cuisiner à la commande !",
@@ -223,7 +223,7 @@ function App() {
     },
     {
       id: 5,
-      title: "Quality Assurance Suite",
+      title: "Cypress",
       subtitle: "Tests automatisés avec Cypress",
       description:
         "Un système qui vérifie automatiquement que tous les projets fonctionnent correctement. Imaginez un inspecteur infatigable qui teste chaque fonctionnalité de vos applications 24/7 : il clique sur les boutons, remplit les formulaires, vérifie que les pages se chargent correctement, et s'assure que tout fonctionne comme prévu. Si quelque chose ne va pas, il vous le dit immédiatement !",
