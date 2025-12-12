@@ -657,7 +657,7 @@ function App() {
         "RPC",
         "JavaScript"
       ],
-      videoUrl: "/videos/natsiothrift.js.mp4",
+      videoUrl: "/videos/trhriftjs.mp4",
       videoPoster: null,
       keyPoints: [
         {
