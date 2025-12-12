@@ -274,8 +274,109 @@ function App() {
       additionalInfo:
         "Ce projet établit une culture de qualité à travers tous les projets R&D. Cypress teste automatiquement chaque fonctionnalité : de l'interface utilisateur (tests E2E) aux connexions backend (tests d'endpoints API). Chaque projet JavaScript bénéficie de cette couverture de tests, garantissant que les nouvelles fonctionnalités n'introduisent pas de régressions. C'est comme avoir un filet de sécurité qui attrape les problèmes avant qu'ils ne deviennent critiques.",
     },
+     // Remplacement du projet Assistant AI par le Wiki Interne IA
     {
       id: 6,
+      title: "AI-Powered Internal Wiki",
+      subtitle: "Retrouvez l'information dont vous avez besoin, instantanément.",
+      description:
+        "Notre équipe avait plus de 29 articles de documentation éparpillés. Trouver le bon guide était comme chercher une aiguille dans une botte de foin, les yeux bandés, dans le noir. Nous avons construit un Wiki interne alimenté par l'IA qui répond aux questions en langage naturel, transformant notre chaos de documentation en une base de connaissances consultable.",
+      technologies: [
+        "Docker",
+        "Ollama (Llama3.2)",
+        "n8n",
+        "PostgreSQL",
+        "MCP (Model-Created Programs)",
+        "Qdrant",
+        "SearXNG",
+      ],
+      videoUrl: "/videos/assistantAi.mp4",
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🧠",
+          title: "Réponses en langage naturel",
+          description:
+            "Posez des questions comme à un collègue et obtenez des réponses précises basées sur notre documentation interne.",
+        },
+        {
+          icon: "🛠️",
+          title: "Outils MCP personnalisés",
+          description:
+            "L'IA dispose de 'superpouvoirs' pour naviguer et comprendre notre Wiki grâce à des outils sur mesure.",
+        },
+        {
+          icon: "🚀",
+          title: "Workflow automatisé",
+          description:
+            "Un pipeline transparent : Webhook → Agent IA → Outils MCP → Réponse, orchestré pour une efficacité maximale.",
+        },
+        {
+          icon: "🔒",
+          title: "100% Local et Privé",
+          description:
+            "Avec Ollama et Llama3.2, tout fonctionne localement. Pas de coûts d'API, une confidentialité totale des données et des réponses ultra-rapides.",
+        },
+      ],
+      benefits: [
+        "Recherche d'information 10x plus rapide",
+        "Réduction du temps perdu à chercher des guides",
+        "Confidentialité totale des données de l'entreprise",
+        "Aucun coût récurrent lié aux APIs externes",
+        "Temps de réponse aux requêtes de 5 à 10 secondes",
+        "Feedback utilisateur extrêmement positif",
+      ],
+      additionalInfo:
+        "L'architecture repose sur 8 conteneurs Docker fonctionnant en parfaite harmonie : n8n, Ollama, PostgreSQL, MCP Server, Qdrant, et SearXNG. Ce projet a non seulement résolu notre problème de documentation, mais a aussi démontré la puissance des modèles de langage open-source hébergés localement. Le voir fonctionner pour la première fois après des heures de débogage a été un moment incroyablement satisfaisant pour l'équipe.",
+    },
+    // Ajout du projet Gemini CLI
+    {
+      id: 7,
+      title: "Gemini CLI",
+      subtitle: "L'intelligence de Gemini dans votre terminal",
+      description:
+        "Un assistant CLI intelligent conçu pour les développeurs. Il amène la puissance des modèles Gemini directement dans le terminal, permettant de rationaliser le flux de travail, d'automatiser les tâches répétitives et d'obtenir une aide au codage contextuelle sans jamais quitter l'environnement de ligne de commande.",
+      technologies: ["Gemini", "CLI", "Node.js", "API"],
+      videoUrl: "/videos/GeminiCLI.mp4",
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "💻",
+          title: "Interface en Ligne de Commande",
+          description:
+            "Accédez à la puissance de Gemini sans quitter votre terminal.",
+        },
+        {
+          icon: "⚡",
+          title: "Rapidité et Efficacité",
+          description:
+            "Obtenez des réponses et des résultats rapidement, optimisant votre flux de travail.",
+        },
+        {
+          icon: "🔧",
+          title: "Outils de Développement",
+          description:
+            "Intégrez Gemini à vos scripts et outils de développement pour automatiser des tâches.",
+        },
+        {
+          icon: "🌐",
+          title: "Connectivité API",
+          description:
+            "Interagissez avec l'API de Gemini pour des fonctionnalités avancées.",
+        },
+      ],
+      benefits: [
+        "Intégration facile dans les workflows de développement",
+        "Automatisation des tâches via des scripts",
+        "Accès rapide aux fonctionnalités de Gemini",
+        "Interface familière pour les développeurs",
+        "Augmentation de la productivité",
+      ],
+      additionalInfo:
+        "Le Gemini CLI transforme votre terminal en un partenaire de développement interactif. Que vous ayez besoin de générer du code, de comprendre un extrait complexe, de corriger un bug ou d'exécuter des commandes shell en langage naturel, cet outil est conçu pour augmenter votre productivité. Son intégration poussée avec le système de fichiers local et les outils de développement en fait une alternative indispensable aux interfaces graphiques, offrant rapidité, flexibilité et une intégration parfaite dans les scripts d'automatisation.",
+    },
+    {
+      id: 8,
       title: "Claude Kali Security",
       subtitle: "Pentesting automatisé par IA",
       description:
@@ -569,7 +670,6 @@ function App() {
           ))}
         </nav>
       </aside>
-
       {/* Zone d'affichage principale */}
       <main className="main-content">
         <div className="project-display">
