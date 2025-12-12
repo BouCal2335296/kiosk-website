@@ -546,10 +546,10 @@ function App() {
     // Remplacement du projet Assistant AI par le Wiki Interne IA
     {
       id: 16,
-      title: "AI-Powered Internal Wiki",
+      title: "AI boosté  Wiki interne",
       subtitle: "Retrouvez l'information dont vous avez besoin, instantanément.",
       description:
-        "Notre équipe avait plus de 29 articles de documentation éparpillés. Trouver le bon guide était comme chercher une aiguille dans une botte de foin, les yeux bandés, dans le noir. Nous avons construit un Wiki interne alimenté par l'IA qui répond aux questions en langage naturel, transformant notre chaos de documentation en une base de connaissances consultable.",
+        "Imaginez avoir des dizaines de guides et documents éparpillés. Difficile de s'y retrouver ! Nous avons créé un moteur de recherche interne intelligent. Il suffit de poser une question simple, et l'IA lit tous les documents pour vous donner la bonne réponse, comme si vous demandiez à un collègue expert.",
       technologies: [
         "Docker",
         "Ollama (Llama3.2)",
@@ -604,7 +604,7 @@ function App() {
       title: "Gemini CLI",
       subtitle: "L'intelligence de Gemini dans votre terminal",
       description:
-        "Un assistant CLI intelligent conçu pour les développeurs. Il amène la puissance des modèles Gemini directement dans le terminal, permettant de rationaliser le flux de travail, d'automatiser les tâches répétitives et d'obtenir une aide au codage contextuelle sans jamais quitter l'environnement de ligne de commande.",
+        "C'est un assistant intelligent pour les développeurs qui fonctionne dans le terminal (l'écran noir avec du texte). Il permet de coder plus vite, d'automatiser des tâches et d'obtenir de l'aide de l'IA Gemini sans utiliser la souris.",
       technologies: ["Gemini", "CLI", "Node.js", "API"],
       videoUrl: "/videos/GeminiCLI.mp4",
       videoPoster: null,
@@ -648,7 +648,7 @@ function App() {
       id: 17,
       title: "Express.js avec Thrift & Axios",
       subtitle: "API Backend avec Thrift RPC et Axios",
-      description: "Une démonstration de la création d'un service backend robuste avec Express.js, une interface RPC Thrift pour les services multilingues et Axios pour les requêtes HTTP. Ce projet montre comment créer un serveur Node.js capable de communiquer avec d'autres services via le protocole efficace Thrift, tout en pouvant interagir avec d'autres API RESTful via Axios.",
+      description: "C'est le 'cerveau' derrière une application. Nous avons construit un système qui permet à différentes parties d'un logiciel de communiquer entre elles. On utilise un outil (Thrift) pour des conversations super rapides et efficaces entre nos propres services, et un autre outil (Axios) pour aller chercher des informations à l'extérieur, sur d'autres sites web. Le tout est organisé par un chef d'orchestre (Express.js) pour que ça fonctionne bien.",
       technologies: [
         "Express.js",
         "Thrift.js",
@@ -657,7 +657,7 @@ function App() {
         "RPC",
         "JavaScript"
       ],
-      videoUrl: "/videos/thrift_axios_express.mp4",
+      videoUrl: "/videos/natsiothrift.js.mp4",
       videoPoster: null,
       keyPoints: [
         {
