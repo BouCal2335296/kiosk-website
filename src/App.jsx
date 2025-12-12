@@ -275,7 +275,7 @@ function App() {
         "Ce projet établit une culture de qualité à travers tous les projets R&D. Cypress teste automatiquement chaque fonctionnalité : de l'interface utilisateur (tests E2E) aux connexions backend (tests d'endpoints API). Chaque projet JavaScript bénéficie de cette couverture de tests, garantissant que les nouvelles fonctionnalités n'introduisent pas de régressions. C'est comme avoir un filet de sécurité qui attrape les problèmes avant qu'ils ne deviennent critiques.",
     },
     {
-      id: 6,
+      id: 8,
       title: "Claude Kali Security",
       subtitle: "Pentesting automatisé par IA",
       description:
@@ -543,6 +543,154 @@ function App() {
       additionalInfo:
         "Grafana est devenu l'outil standard de l'industrie pour la visualisation de données et le monitoring. Son architecture flexible permet de connecter plusieurs data sources simultanément, créer des dashboards complexes avec des variables dynamiques, et partager les visualisations avec votre équipe. Les panels supportent une grande variété de types de graphiques : time series (lignes et aires), bar charts, pie charts, gauges, stat panels pour les KPIs, tables pour les données détaillées, et heatmaps pour les matrices de données. Le système d'alerting intégré surveille vos métriques en continu et peut déclencher des notifications via multiples canaux (email, Slack, Discord, webhook custom, PagerDuty). Grafana supporte le templating avec des variables qui rendent vos dashboards réutilisables : créez un dashboard pour un serveur et réutilisez-le pour tous vos serveurs avec des filtres dynamiques. Le déploiement Docker simplifie l'installation : docker run avec quelques variables d'environnement et vous êtes prêt. Configuration via fichiers YAML ou interface web, gestion des utilisateurs avec roles et permissions, organisation hiérarchique avec dossiers et tags. L'API REST complète permet d'automatiser la création de dashboards, gérer les data sources, et intégrer Grafana dans vos workflows CI/CD. Cas d'usage populaires : monitoring d'infrastructures (CPU, RAM, disque, réseau), métriques applicatives (temps de réponse, erreurs, utilisateurs actifs), analytics business (ventes, KPIs, conversion), et IoT (capteurs, données temps réel).",
     },
+    // Remplacement du projet Assistant AI par le Wiki Interne IA
+    {
+      id: 16,
+      title: "AI-Powered Internal Wiki",
+      subtitle: "Retrouvez l'information dont vous avez besoin, instantanément.",
+      description:
+        "Notre équipe avait plus de 29 articles de documentation éparpillés. Trouver le bon guide était comme chercher une aiguille dans une botte de foin, les yeux bandés, dans le noir. Nous avons construit un Wiki interne alimenté par l'IA qui répond aux questions en langage naturel, transformant notre chaos de documentation en une base de connaissances consultable.",
+      technologies: [
+        "Docker",
+        "Ollama (Llama3.2)",
+        "n8n",
+        "PostgreSQL",
+        "MCP (Model-Created Programs)",
+        "Qdrant",
+        "SearXNG",
+      ],
+      videoUrl: "/videos/assistantAi.mp4",
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🧠",
+          title: "Réponses en langage naturel",
+          description:
+            "Posez des questions comme à un collègue et obtenez des réponses précises basées sur notre documentation interne.",
+        },
+        {
+          icon: "🛠️",
+          title: "Outils MCP personnalisés",
+          description:
+            "L'IA dispose de 'superpouvoirs' pour naviguer et comprendre notre Wiki grâce à des outils sur mesure.",
+        },
+        {
+          icon: "🚀",
+          title: "Workflow automatisé",
+          description:
+            "Un pipeline transparent : Webhook → Agent IA → Outils MCP → Réponse, orchestré pour une efficacité maximale.",
+        },
+        {
+          icon: "🔒",
+          title: "100% Local et Privé",
+          description:
+            "Avec Ollama et Llama3.2, tout fonctionne localement. Pas de coûts d'API, une confidentialité totale des données et des réponses ultra-rapides.",
+        },
+      ],
+      benefits: [
+        "Recherche d'information 10x plus rapide",
+        "Réduction du temps perdu à chercher des guides",
+        "Confidentialité totale des données de l'entreprise",
+        "Aucun coût récurrent lié aux APIs externes",
+        "Temps de réponse aux requêtes de 5 à 10 secondes",
+        "Feedback utilisateur extrêmement positif",
+      ],
+      additionalInfo:
+        "L'architecture repose sur 8 conteneurs Docker fonctionnant en parfaite harmonie : n8n, Ollama, PostgreSQL, MCP Server, Qdrant, et SearXNG. Ce projet a non seulement résolu notre problème de documentation, mais a aussi démontré la puissance des modèles de langage open-source hébergés localement. Le voir fonctionner pour la première fois après des heures de débogage a été un moment incroyablement satisfaisant pour l'équipe.",
+    },
+    // Ajout du projet Gemini CLI
+    {
+      id: 15,
+      title: "Gemini CLI",
+      subtitle: "L'intelligence de Gemini dans votre terminal",
+      description:
+        "Un assistant CLI intelligent conçu pour les développeurs. Il amène la puissance des modèles Gemini directement dans le terminal, permettant de rationaliser le flux de travail, d'automatiser les tâches répétitives et d'obtenir une aide au codage contextuelle sans jamais quitter l'environnement de ligne de commande.",
+      technologies: ["Gemini", "CLI", "Node.js", "API"],
+      videoUrl: "/videos/GeminiCLI.mp4",
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "💻",
+          title: "Interface en Ligne de Commande",
+          description:
+            "Accédez à la puissance de Gemini sans quitter votre terminal.",
+        },
+        {
+          icon: "⚡",
+          title: "Rapidité et Efficacité",
+          description:
+            "Obtenez des réponses et des résultats rapidement, optimisant votre flux de travail.",
+        },
+        {
+          icon: "🔧",
+          title: "Outils de Développement",
+          description:
+            "Intégrez Gemini à vos scripts et outils de développement pour automatiser des tâches.",
+        },
+        {
+          icon: "🌐",
+          title: "Connectivité API",
+          description:
+            "Interagissez avec l'API de Gemini pour des fonctionnalités avancées.",
+        },
+      ],
+      benefits: [
+        "Intégration facile dans les workflows de développement",
+        "Automatisation des tâches via des scripts",
+        "Accès rapide aux fonctionnalités de Gemini",
+        "Interface familière pour les développeurs",
+        "Augmentation de la productivité",
+      ],
+      additionalInfo:
+        "Le Gemini CLI transforme votre terminal en un partenaire de développement interactif. Que vous ayez besoin de générer du code, de comprendre un extrait complexe, de corriger un bug ou d'exécuter des commandes shell en langage naturel, cet outil est conçu pour augmenter votre productivité. Son intégration poussée avec le système de fichiers local et les outils de développement en fait une alternative indispensable aux interfaces graphiques, offrant rapidité, flexibilité et une intégration parfaite dans les scripts d'automatisation.",
+    },
+    {
+      id: 17,
+      title: "Express.js avec Thrift & Axios",
+      subtitle: "API Backend avec Thrift RPC et Axios",
+      description: "Une démonstration de la création d'un service backend robuste avec Express.js, une interface RPC Thrift pour les services multilingues et Axios pour les requêtes HTTP. Ce projet montre comment créer un serveur Node.js capable de communiquer avec d'autres services via le protocole efficace Thrift, tout en pouvant interagir avec d'autres API RESTful via Axios.",
+      technologies: [
+        "Express.js",
+        "Thrift.js",
+        "Axios.js",
+        "Node.js",
+        "RPC",
+        "JavaScript"
+      ],
+      videoUrl: "/videos/thrift_axios_express.mp4",
+      videoPoster: null,
+      keyPoints: [
+        {
+          icon: "🚀",
+          title: "RPC Haute Performance",
+          description: "Utilise Apache Thrift pour créer un framework RPC multilingue à haute performance, permettant une communication efficace entre des services écrits dans différents langages."
+        },
+        {
+          icon: "🌐",
+          title: "Requêtes HTTP Modernes",
+          description: "Emploie Axios, un client HTTP basé sur les promesses, pour effectuer des requêtes vers des API RESTful externes ou internes de manière propre et moderne."
+        },
+        {
+          icon: "⚙️",
+          title: "Backend Flexible avec Express.js",
+          description: "Construit sur Express.js, le standard de facto pour les applications web Node.js, offrant un framework robuste et minimaliste pour le serveur."
+        },
+        {
+          icon: "🔗",
+          title: "Intégration Transparente",
+          description: "Démontre comment Thrift.js et Axios.js peuvent être intégrés de manière transparente dans une application Express.js pour un backend puissant et flexible."
+        }
+      ],
+      benefits: [
+        "Communication efficace entre microservices",
+        "Structures de données fortement typées avec Thrift",
+        "Requêtes HTTP asynchrones simplifiées avec Axios",
+        "Serveur léger et rapide avec Express.js",
+        "Architecture évolutive pour les applications complexes",
+        "Séparation claire des préoccupations entre les services"
+      ],
+      additionalInfo: "Ce projet sert de modèle pour la création d'applications backend modernes en Node.js. Il présente une puissante combinaison de technologies pour créer un service à la fois rapide et flexible, capable de gérer les modèles de communication RPC et REST. L'utilisation de Thrift est particulièrement remarquable pour ses performances et pour la définition d'un contrat clair entre les services."
+    }
   ];
 
   return (
@@ -569,7 +717,6 @@ function App() {
           ))}
         </nav>
       </aside>
-
       {/* Zone d'affichage principale */}
       <main className="main-content">
         <div className="project-display">
