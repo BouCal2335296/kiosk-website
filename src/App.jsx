@@ -343,7 +343,7 @@ function App() {
         "XAML",
         "Visual Studio",
       ],
-      videoUrl: null,
+      videoUrl: "videos/Vidéo Plateforme.mp4",
       videoPoster: null,
       keyPoints: [
         {
@@ -396,7 +396,7 @@ function App() {
         "HTML5 Canvas",
         "NPM",
       ],
-      videoUrl: null,
+      videoUrl: "videos/VideoChartJS.mp4",
       videoPoster: null,
       keyPoints: [
         {
@@ -450,7 +450,7 @@ function App() {
         "API REST",
         "React",
       ],
-      videoUrl: null,
+      videoUrl: "videos/VideoUmami.mp4",
       videoPoster: null,
       keyPoints: [
         {
@@ -504,7 +504,7 @@ function App() {
         "Time Series DB",
         "API REST",
       ],
-      videoUrl: null,
+      videoUrl: "videos/Video Grafana.mp4",
       videoPoster: null,
       keyPoints: [
         {
